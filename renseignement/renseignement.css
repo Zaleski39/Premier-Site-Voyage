@@ -1,0 +1,113 @@
+@import url(../style.css);
+
+body{
+   background-color: rgb(245, 245, 245);
+}
+
+
+/* Photo banière & titre */
+   .photobanniere{
+      background-image: url(../assets/img/rensignement_bannière.jpg);
+      background-size : cover;
+      height: 50vh;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      color: rgb(185, 185, 185);
+      font-size: 1.5em;
+      }
+
+   .photobanniere--titre{
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      }
+
+/* Photo renseignement  */
+   .renseignement--photo{
+      object-fit: cover;
+      width: 100%;
+      height: 100vh;
+
+      }
+
+   .renseignement{
+      margin-top: 10px ;
+      margin-bottom: 20px;
+
+      }
+      
+
+/* Bouton Envoyer & Formulaire*/
+
+   #renseignement--right--bouton--1{
+      background-color: black;
+      opacity: 0.9;
+      color : white;
+      border : none;
+      padding : 5px 20px;            
+      }
+
+   #renseignement--right--bouton--1:hover{
+      background-color: white;
+      color : black;
+      border: black 1px solid;     
+      }
+
+   .renseignement--right--bouton{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      }
+
+   .renseignement{
+      margin-bottom: 0px;
+   }
+
+
+   .contact--right{
+      color : #818386;
+      margin-bottom: 10px;
+      Margin-top : 52px;
+      /* height: 100vh; */
+      }
+
+   .form-check-input:checked{
+      background-color: #2667af;
+      border-color: #2667af;
+   }
+
+ 
+   .renseignement--right--couleur{
+      color : #818386;
+      margin : 0px;
+      padding : 0px;
+      }
+   .renseignement--right--champs{
+      border : none;
+      border-bottom: #818386 1px solid;
+      width: 100%;
+      color : black;
+      margin-bottom: 5px;
+      background-color: rgb(245, 245, 245);
+      }
+
+   #renseignement--right--message{
+      width: 100%;
+      min-height: 150px;
+   }
+
+
+   /* CSS Formulaire contact message alerte */
+
+   label.error {
+      color: red;
+      margin-left: 20px;
+ 
+   }
+   input.error {
+    border: 1px dashed red;
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+   }

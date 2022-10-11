@@ -1,0 +1,380 @@
+@import url(../style.css);
+
+body{
+    background-color: rgb(245, 245, 245);
+ }
+
+
+/* Photo banière & titre */
+.photobanniere1{
+    background-image: url(../assets/img/circuit-banniere-format-mobile.jpg);
+    height: 55vh;
+    padding-top: 60px;
+    background-position: top;
+    color: rgb(185, 185, 185);
+ }
+
+ .photobanniere1-titre{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-left: 50px;
+    padding : 8px;
+    width: 150px;
+    
+ }
+
+/* Selection */
+ .selection1-2{
+    margin-top:100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding : 10px;
+
+ }
+
+ .block {
+    display: flex;
+    max-width: 800px;
+   margin: auto;
+ }
+
+ /* Fond calendrier Hover */
+
+.dropdown-item:hover{
+   background-color: #6c757d;
+}
+
+/* Couleur bouton Rechercher */
+
+.couleurRechercher{
+   background-color: #f2007d;
+   border-color: #f2007d;
+   color: white;
+}
+.couleurRechercher:hover{
+   background-color: #e00069;
+   border-color: #e00069;
+   color: white;
+}
+.couleurRechercher:focus{
+   box-shadow:none;
+   background-color: #e00069;
+   border-color: #e00069;
+}
+.couleurRechercher:active{
+   background-color: #e00069;
+   border-color: #e00069;
+}
+
+
+
+.selection1 p{
+   margin-bottom : 5px;
+   color: rgb(245, 245, 245);
+
+}
+
+.selection2{
+   margin-top : 10px;
+   color: white;
+}
+
+.b1, .btn, .b2{
+   width: 160px;
+   }
+
+
+.b2{
+   background-color: #535658;
+   border : none ;
+   color : white
+   }
+
+
+.form-select:focus{
+   box-shadow : none;
+}
+
+.form-select-indicator-color {
+   color : white ;
+}
+
+@media (max-width:767px) {
+   .selection1-2{
+      width: 200px;
+      margin: auto;
+      text-align: center;
+   }
+   
+   .photobanniere1{
+      padding-top: 20px;
+   }
+
+   .couleurRechercher{
+     margin-top: 10px;
+   }
+
+   .b2, .b1{
+      margin: auto;
+   }
+
+   .photobanniere1{
+      background-image: url(../assets/img/circuit-banniere-format-mobile.jpg);
+      height: 100vh;
+      padding-top: 60px;
+      background-position: top;
+      color: rgb(185, 185, 185);
+   }
+
+}
+
+/* Modification couleur bouton blanc */
+
+.boutonBlanc{
+   font-size: 14px;
+   color: black;
+   background-color: white;
+   border-color: #6c757d;
+}
+
+.boutonBlanc:hover{
+   color: black;
+   background-color: white;
+   border-color: #6c757d;
+}
+
+.btn-secondary {
+   font-size: 14px;
+}
+
+.btn-secondary:focus{
+   box-shadow: none;
+}
+
+.fondNoir{
+   background-color: #6c757d;
+   color : white
+
+}
+
+
+
+/* Calendrier */
+
+.calendrier        {
+   background-color: #535658;
+   color: white;
+   height: 36px;
+   text-align: center;
+   border : none ;
+}
+
+/* Calendrier - Icone blanche */
+::-webkit-calendar-picker-indicator {
+   filter: invert(1);
+}
+
+#essai{
+   margin-bottom: 0px;
+}
+
+
+/* CSS Nouvel page Caroussel */
+
+
+/* Caroussel 10 */
+.caroussel10{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   box-shadow: rgb(51 51 51 / 15%) 0px 8px 8px 0px;
+
+}
+.photo10{
+  
+   object-fit: cover;
+   height: 100%;
+   padding-left: 0px;
+   overflow:hidden;
+}
+.caritemousel-{
+   height: 270px;
+}
+.caroussel10 p{
+   margin :0;
+   padding :0;    
+}
+
+/* Colonne 2 Caroussel 10 */
+
+.blockDescription{
+   height: 270px;
+   border: 1px solid #e6eef2;
+   padding-left: 10px;
+}
+
+.paysCircuit{
+   color: #199bd7;
+   font-size: 12px;
+
+}
+.titreCircuit{
+   font-size: 24px;
+    font-weight: 300;
+    color: #545454;
+}
+
+.noteCircuit{
+   color : #717171;
+   font-size: 14px;
+}
+
+.noteCircuitCouleur{
+   color:#199bd7;
+   margin-left:5px;
+}
+
+.descritonCircuit{
+   color : #717171;
+   font-size: 14px;
+}
+
+.espaceDescription{
+   margin-top: 50px;
+}
+
+@media (max-width:767px) {
+   .espaceDescription{
+      margin-top: 10px;
+      }
+   .blockDescription{
+      height: 170px;
+   }
+
+      }  
+
+.blockPrix{
+   height: 270px;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #e6eef2;
+}
+
+@media (max-width:991px) {
+   .blockPrix{
+      height: 200px;
+   }
+   }
+
+.blockprix--button{
+   height: 100%;
+   display: flex;
+   align-items: flex-end;
+}
+
+.nuitNourriture, .nuitNourriture1{
+   background-color: #d3e1e6;
+   color: #545454;
+   font-size: 15px;
+   }
+
+.iconeHorloge{
+   height: 15px;
+   margin-bottom : 3px;
+   margin-left: 10px;
+   margin-right: 10px;
+   
+}
+
+.caroussel10 .nuitNourriture{
+   padding-bottom: 5px;
+} 
+
+.prix10{
+   font-size: 14px;
+   color: #717171;
+}
+
+.caroussel10 .prix10{
+   padding-left: 30px ;
+   padding-top: 5px;
+}
+
+.prix11{
+   font-size: 23px;
+   color: #199bd7
+}
+
+.caroussel10 .prix11{
+   padding-left: 30px ;
+
+}
+
+.bouton1{
+   width: 100%;
+   border-radius: 0;
+   align-self: flex-end;
+}
+
+.row{
+   --bs-gutter-x: 0rem;
+}
+
+
+
+   .bouton1:hover{
+      background-color: white;
+      color : #0d6efd;
+   }
+
+
+
+   /* CSS effet js */
+      [class*="reveal-1"] {
+         opacity: 0;
+         transform: translateX(-200px);
+      }
+      .reveal-visible{
+         opacity: 1;
+         transform: translateX(0);
+      }
+      .reveal-1 {
+         transition-delay: 0.1s;
+      }
+      .reveal-2 {
+         transition-delay: 0.2s;
+      }
+      .reveal-3 {
+         transition-delay: 0.3s;
+      }
+      .reveal-4 {
+         transition-delay: 0.4s;
+      }
+
+
+      body{
+         overflow-x: hidden; 
+      }
+
+
+   /* CSS effet js */
+   [class*="reveal-2"] {
+      opacity: 0;
+      transform: translateX(200px);
+   }
+   .reveal-visible{
+      opacity: 1;
+      transform: translateX(0);
+      transition: 1s cubic-bezier(.53,.61,.69,.67);
+   }
+   .reveal-1 {
+      transition-delay: 0.1s;
+   }
+   .reveal-2 {
+      transition-delay: 0.2s;
+   }
+   .reveal-3 {
+      transition-delay: 0.3s;
+   }
+   .reveal-4 {
+      transition-delay: 0.4s;
+   }
+      

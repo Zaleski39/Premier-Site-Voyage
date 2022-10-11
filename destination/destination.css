@@ -1,0 +1,202 @@
+@import url(../style.css);
+
+body{
+   background-color: rgb(245, 245, 245);
+}
+
+
+/* Photo banière & titre */
+   .photobanniere1{
+      position: relative;
+      height: 50vh;
+      display: flex;
+      align-items: flex-end;
+      color: rgb(185, 185, 185);
+      font-size: 1.5em;
+      }
+
+      .abcabc{
+         overflow: hidden;
+      }
+
+      .photobanniere1:before {
+         content: "";
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-image: url(../assets/img/banniere-destination.jpg);
+         background-size : cover;
+         background-position: center;
+         animation: 20s linear 0s infinite alternate move_eye;
+         z-index: -10;
+         margin-top: 50px;
+      }
+      @keyframes move_eye { from { transform: scale(1.0); } to { transform: scale(1.20); } }
+
+         .abc{
+            overflow: hidden;
+         }
+
+
+      .photobanniere1-titre{
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+
+   }
+
+/* Titre Nos offres */
+   .titreDestination{
+      margin-top: 50px;
+   
+      color: #49b1df;
+   }
+
+   .avion{
+    fill: black;
+    height: 80px;
+    width: 80px;
+    background-color: #49b1df;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;  
+    }
+
+
+   /* Effet image destination */
+   .card{
+      border-radius: 20px;
+      border: 1px solid rgba(0,0,0,.125);
+      overflow:hidden;
+      margin-top: 50px;
+   }
+   .card-img-top {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      }
+   .container-img{
+   display:block;
+   overflow:hidden;
+   }
+   .container-img img{
+   width:100%;
+   height:200px;
+   transition: all 1s;
+   object-fit: cover;
+   }
+   .card:hover .container-img img{
+   transform:scale(1.2);
+   }
+   .card{
+   box-shadow: rgb(51 51 51 / 15%) 0px 8px 8px 0px;
+   }
+
+/* Changement couleur bouton card */
+
+.btn-primary {
+   color: #fff;
+   background-color: #49B1DF;
+   border-color: #49B1DF;
+
+}
+
+.card-btn-centrer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 1rem;
+}
+
+.btn-primary:hover {
+   color: #fff;
+   background-color: #2567AF;
+   border-color: #2567AF;
+}
+
+.card-body{
+   height:300px;
+}
+
+@media (max-width:767px){
+ .card-body{
+   height:270px;
+  }
+  }
+
+
+
+.card-text{
+   font-style: italic;
+}
+
+.prix{
+   background-color: rgb(255, 255, 255);
+   border-radius: 0.8em;
+   font-size: 1rem;
+   max-width: 400px;
+   padding: 5px 15px;
+   position: absolute;
+   right: 10px;
+   top: 180px;
+   display: flex;
+   z-index: 3;
+}
+
+.iconeAvion{
+   height: 20px;
+}
+
+.titreIconeAvion{
+   font-size:  0.675rem;
+   color: rgb(89, 89, 89);
+   font-weight: 650;
+   display: flex;
+   align-items: center;
+}
+
+.iconeMaison{
+   height: 20px;
+   margin-right: 2px;
+}
+
+.descriptionVol{
+   margin-bottom: 0px;
+   font-size: 0.8rem;
+   letter-spacing: 0.1rem;
+}
+
+.descriptionVol1{
+   font-size: 0.8rem;
+   color: rgb(89, 89, 89);
+}
+
+
+/* ScrollToTop */
+#myBtn {
+   display: none; /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   bottom: 20px; /* Place the button at the bottom of the page */
+   right: 30px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   border: none; /* Remove borders */
+   outline: none; /* Remove outline */
+   background-color: #333; /* Set a background color */
+   color: white; /* Text color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   padding: 15px; /* Some padding */
+   border-radius: 10px; /* Rounded corners */
+   font-size: 18px; /* Increase font size */
+ }
+ 
+ #myBtn:hover {
+   background-color: #2667af ; /* Add a dark-grey background on hover */
+ }
+
+.destination2{
+   margin-bottom: 50px;
+}
+ 

@@ -1,0 +1,314 @@
+@import url(../style.css);
+body{
+    background-color: rgb(245, 245, 245);
+}
+/*Aside - HAUT DE PAGE */
+aside{
+    position: relative;
+    background-image: url(../assets/img/croisiere-banniere.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    
+}
+aside h1{
+    margin-top: 050px ;
+    margin-left: 50PX;
+    color: white;
+    text-transform: uppercase;
+}
+
+.texteBaniere{
+    color : white;
+    margin-left: 50px;
+    font-size: 1.5em;
+    font-style: italic;
+   
+}
+
+.ban
+{
+    /* background-color: rgba(168, 158, 158, 0.37); */
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+article h2{
+    color: #49b1df;
+}
+
+.custom-shape-divider-bottom-1632146566 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1632146566 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1632146566 .shape-fill {
+    fill: rgb(245, 245, 245);}
+
+
+
+
+
+
+
+/* Vignettes */
+article{
+    margin-top: 200px;
+}
+article h2{
+    text-align: center;
+    margin-top: 50px;
+}
+article p{
+    color: #2667af;
+    text-align: center;
+}
+.lien{
+    text-decoration: none;
+}
+/* .image-croisiere{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+} */
+
+.commentaire{
+    background-color: #fff;
+    color: #333;
+    font-style: italic;
+    font-size: 18px;
+    
+}
+/* Bannière */
+.voyage{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../assets/img/voyage.jpg);
+    height:300px;;
+    text-align: center;
+    padding:100px;
+    margin-top: 50px;
+    color: white;
+}
+.choix{
+    text-align: center;
+    margin-top: 50px;
+}
+/* partie image */
+.img-g{
+    width: 100%;
+    height: 100%;
+}
+.img-d{
+    width:100%;
+    height: 100%; 
+}
+
+.commentaire1{
+    width: 100%;
+    height: 100%; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.commentaire2{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%; 
+}
+.align1{
+    height: 50%;
+    padding-bottom: 12px;
+}
+
+.align2{
+    height: 50%;
+    padding-top: 12px;
+}
+.commentaire-icone{
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:767px){
+    .rev{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .align1{
+        margin-top: 50px;
+    }
+    .commentaire1{
+        height: 150px;
+    }
+    .commentaire2{
+        height: 150px;
+    }
+}
+
+
+
+            /* CSS effet js */
+            [class*="reveal-"] {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            .reveal-visible{
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1.2s;
+            }
+            .reveal-1 {
+                transition-delay: 0.1s;
+            }
+            .reveal-2 {
+                transition-delay: 0.2s;
+            }
+
+
+/* bouton pied de page */
+            .chevron {
+                position:relative;
+                display:block;
+                height:50px; /*Height should be double border thickness*/
+                position: relative;
+                top: 178px;
+                padding: 12px;
+                margin-bottom: 50px;
+                height: 10px;
+                transform: rotate(180deg);
+            }
+            .chevron::before,
+            .chevron::after {
+                position:absolute;
+                display:block;
+                content:"";
+                border:25px solid transparent; /*Adjust chevron size*/
+                z-index: 5;
+            }
+            /*Change the four instances of 'top' below to rotate chevron*/
+            /*Use (top/right/bottom/left) where you want the back of the chevron to be*/
+
+            .chevron::after {
+                top:-10px; /*Adjust thickness*/
+                border-top-color:#2667af; /*Match chevron background colour*/
+            }
+            .chevron:hover:after {
+                top:-10px; /*Adjust thickness*/
+                border-top-color:#fff; /*Match chevron background colour*/
+            }
+
+.reveal-1{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 6 images */
+
+        .container-img{
+            position:relative;
+            overflow:hidden;
+            box-shadow: rgb(51 51 51 / 15%) 0px 8px 8px 0px; 
+        }
+        .container-img img{
+            width:100%;
+            height:200px;
+            object-fit: cover;
+        }
+
+
+        .container-img .infos-hover{
+            display:block;
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            height:0;
+            color:#fff;
+            text-align:center;
+            background:rgba(0,0,0,0.8);
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .container-img .infos-hover i{
+            margin-top:60px;
+            font-size:50px;
+        }
+        .container-img .infos-hover p{
+            text-align:center;
+            color: antiquewhite;
+            font-style: italic;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .container-img:hover .infos-hover{
+            height:100%;
+        }
+
+
+
+
+/* Animation texte vignette */
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            width: 800px;
+            height: 500px;
+    /* min-height: 100vh; */
+    overflow: hidden;
+    background: #130e23;
+            margin-left: 200px;
+            margin-top: 200px;
+
+    }
+
+section .text{
+    position: relative;
+    text-align: center;
+    color: #00cefe;
+    margin: 40px;
+    /* max-width: 400px; */
+    white-space: pre-line;
+
+    }
+
+section .text span{
+    position: relative;
+    display: inline-block;
+    }
+
+
+

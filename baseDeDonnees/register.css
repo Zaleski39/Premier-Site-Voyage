@@ -1,0 +1,139 @@
+/* Page Login */*
+
+                           
+
+    /* Reset pading et margin de tous les éléments - border-box prend en compte la padding et les bordures dans le calcul de la largeur et hauteur*/
+    *, ::before, ::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        color : none ;
+        }    
+    
+
+    body{ 
+        font-family : Montserrart, sans-serif;
+        background-image: url("../assets/img/login.jpg");
+        height : 100vh;
+        display : flex;
+        justify-content: center;
+        align-items: center ;                
+        }
+
+
+
+    .wrapper{
+        width: 500px;
+        height : auto;
+        padding : 25px;
+        background: rgb(245, 245, 245);
+        border-radius : 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .wrapper h2 strong{
+        color : #2667af;
+        font-weight : 900;
+    }
+
+    .wrapper h2{
+        color : #666;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .wrapper .form-group{
+        position: relative;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .wrapper .form-group label{
+        position: absolute;
+        top : 50%;
+        left : 0px;
+        transform : translateY(-50%);
+        color : #aaa;
+        font-size : 20px;
+        transition : 0.4s ease-out;
+    }
+
+    .wrapper .form-group input{
+        display : block;
+        width: 100%;
+        padding: 10px 0px;
+        border : none;
+        outline : none;
+        background : none;
+        border-bottom : 3px solid #aaa;
+        color : #666;
+        font-size : 20px;
+        transition : 0.4s ease-out;
+    }
+
+    .form-group:nth-child(6) {
+        /* margin-bottom: 65px; */
+        justify-content :center ;
+    }
+
+    .wrapper .form-group .boutonSeConnecter {
+        display: block;
+        width: auto;
+        padding: 15px 60px;
+        border : 3px solid #2667af;
+        border-radius: 999px;
+        background-image: linear-gradient(to right, transparent 50%, #2667af 50%, #49b1df);
+        background-size: 200%;
+        color: #2667af;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .wrapper .form-group .boutonSeConnecter:hover {
+        color : #fff;
+        background-position : 100% ; 
+        border: 3px solid #fff;   
+    }
+
+    a{
+        color : #2667af;
+        font-size : 16px;
+        font-weight: 400 ;
+        text-decoration: none ;
+        padding-bottom: 5px ;
+        border-bottom: 1px solid transparent ;
+    }
+
+    a:hover{
+        text-decoration: none ;
+        border-bottom-color : #2667af;
+    }
+
+    /* Animation Nom utilisateur et mot de passe  */
+
+
+    .wrapper .form-group:focus-within label, .wrapper .form-group.animation label {
+        top : 0px;
+        transform : translateY(-100%);
+        color : #2667af;
+    }
+
+    .wrapper .form-group:focus-within input, .wrapper .form-group.animation input {
+        border-bottom-color: #2667af ;
+    }
+
+    .form-control:focus{
+        box-shadow: none;
+    }
+
+    .telechargement{
+        padding: 5px;
+    }
+
+    .telechargement1{
+        margin-top: 10px;
+        height: 45px;
+    }
+
